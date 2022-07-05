@@ -271,6 +271,26 @@ aside {
   }
 }
 
+.draft-panels {
+
+  .draft-allegation .draft-text a {
+    color: $link;
+  }
+
+  .draft-allegation .draft-text h2 {
+    margin-bottom: $line-height / 3;
+    margin-top: 0;
+  }
+
+  ul,
+  ol {
+
+    li {
+      font-size: $base-font-size;
+    }
+  }
+}
+
 .back {
 
   .icon-angle-left {
@@ -714,6 +734,7 @@ body > header,
   }
 
   .dropdown .is-dropdown-submenu {
+    background: #fff;
     min-width: rem-calc(240);
     width: max-content;
 
@@ -979,6 +1000,7 @@ body > header,
 }
 
 .feeds-participation {
+  display: block;
 
   @include breakpoint(medium) {
 
@@ -2008,6 +2030,17 @@ footer {
   }
 }
 
+.draft-panels .draft-allegation {
+
+  .draft-panel {
+    color: $text;
+  }
+
+  .calc-comments .comment-box {
+    overflow: auto;
+  }
+}
+
 .draft-panels .comments-on .calc-index .draft-index-rotated {
   margin-top: $line-height * 5;
 }
@@ -2275,6 +2308,33 @@ footer {
   }
 }
 
+.legislation-draft-versions-form .markdown-preview {
+  font-family: "Montserrat", sans-serif !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif !important;
+    line-height: unset;
+  }
+
+  h1 {
+    font-size: rem-calc(44);
+  }
+
+  h2 {
+    font-size: rem-calc(34);
+  }
+
+  h3 {
+    font-size: rem-calc(24);
+    margin: 0;
+  }
+}
+
 // 8. Debates
 // --------------------
 
@@ -2299,10 +2359,6 @@ footer {
 .debate .votes,
 .debate-show .votes {
   border-left: 0;
-}
-
-.debate-show .votes {
-  text-align: left;
 }
 
 .debate,
