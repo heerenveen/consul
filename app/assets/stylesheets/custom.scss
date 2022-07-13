@@ -28,3 +28,36 @@ form label {
     border-left-color: $brand;
   }
 }
+
+.cookies-message {
+  background: #e3e2e3;
+  bottom: 0;
+  color: $text;
+  left: 0;
+  padding: $line-height;
+  padding-bottom: $line-height / 2;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  p {
+    font-size: $small-font-size;
+    padding-top: $line-height / 2;
+
+    @include breakpoint(large) {
+      display: inline-block;
+    }
+  }
+
+  .button {
+    background: $brand;
+    color: #fff;
+    pointer-events: auto;
+
+    @include breakpoint(large) {
+      float: right;
+      margin-left: $line-height / 2;
+    }
+  }
+}
