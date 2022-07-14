@@ -8,17 +8,19 @@
     <div class="small-12 medium-4 column step">
       <%= image_tag(image_path_for("welcome/step_1.png"), alt: "", class: "margin") %>
       <span class="number"><%= t("welcome.steps.step_1.number") %></span>
-      <h3><%= t("welcome.steps.step_1.title") %></h3>
+      <%= link_to new_user_registration_path do %>
+        <h3><%= t("welcome.steps.step_1.title") %></h3>
+      <% end %>
       <p><%= t("welcome.steps.step_1.description") %></p>
-      <%= link_to t("welcome.steps.step_1.link"), new_user_registration_path %>
     </div>
 
     <div class="small-12 medium-4 column step">
       <%= image_tag(image_path_for("welcome/step_2.png"), alt: "", class: "margin") %>
       <span class="number"><%= t("welcome.steps.step_2.number") %></span>
-      <h3><%= t("welcome.steps.step_2.title") %></h3>
+      <%= link_to budgets_path, data: { smooth_scroll: true } do %>
+        <h3><%= t("welcome.steps.step_2.title") %></h3>
+      <% end %>
       <p><%= t("welcome.steps.step_2.description") %></p>
-      <%= link_to t("welcome.steps.step_2.link"), budgets_path, data: { smooth_scroll: true } %>
     </div>
 
     <div class="small-12 medium-4 column step">
@@ -26,7 +28,6 @@
       <span class="number"><%= t("welcome.steps.step_3.number") %></span>
       <h3><%= t("welcome.steps.step_3.title") %></h3>
       <p><%= t("welcome.steps.step_3.description") %></p>
-      <%= link_to t("welcome.steps.step_3.link"), "#" %>
     </div>
   </div>
 </div>
