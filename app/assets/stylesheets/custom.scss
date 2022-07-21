@@ -11,6 +11,25 @@
   }
 }
 
+form label,
+.feed-content .debate a {
+  color: $brand;
+}
+
+.checkbox a {
+  color: $brand;
+  text-decoration: underline;
+}
+
+.budget-phases .phase-title.current-phase-tab a,
+.budget-phases .tabs-title.current-phase-tab [aria-selected="true"] {
+  background: $brand;
+
+  &::after {
+    border-left-color: $brand;
+  }
+}
+
 .cookies-message {
   background: #e3e2e3;
   bottom: 0;
