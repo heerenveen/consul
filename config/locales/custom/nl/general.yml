@@ -298,6 +298,7 @@ nl:
       contact: "noreply@stemvanheerenveen.nl"
       facebook: "facebook/consul"
       facebook_url: "https://facebook.com/consul"
+      cookies: "Cookieverklaring"
     dashboard:
       proposal_header:
         published: "Gepubliceerd"
