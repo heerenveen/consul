@@ -82,10 +82,10 @@ describe "Welcome page" do
       expect(page).to have_content "2"
       expect(page).to have_link "Decide"
       expect(page).to have_content "Share your ideas and vote on the changes you want to see in the city."
-      expect(page).to have_content "3"
-      expect(page).to have_content "Share"
-      expect(page).to have_content "Keep up with the ideas that matter to you the most, and share them "\
-                                   "through social media."
+      expect(page).not_to have_selector ".number", text: "3"
+      expect(page).not_to have_selector "h3", text: "Share"
+      expect(page).not_to have_content "Keep up with the ideas that matter to you the most, and share them "\
+                                       "through social media."
     end
   end
 

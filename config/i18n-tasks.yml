@@ -236,6 +236,9 @@ ignore_unused:
   - "tags.list.filter.more.*"
   - "welcome.steps.step_1.link"
   - "welcome.steps.step_2.link"
+  - "welcome.steps.step_3.number"
+  - "welcome.steps.step_3.title"
+  - "welcome.steps.step_3.description"
   - "welcome.steps.step_3.link"
 ####
 ## Exclude these keys from the `i18n-tasks eq-base" report:
