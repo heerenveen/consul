@@ -515,7 +515,3 @@ nl:
       submit_button: "Stuur melding"
       info_about_receivers: "Deze melding stuur je naar <strong>%{count} mensen</strong> en is te zien op %{proposal_page}.<br> Meldingen worden niet direct gestuurd, maar de gebruikers ontvangen periodiek een email met alle meldingen omtrent jouw initiatief."
       proposal_page: "de pagina van het initiatief"
-  cookies:
-    message: "Uw ervaring op deze website zat verbeteren na het toelaten van cookies"
-    accept: "Cookies toestaan"
-    more_info: "Meer informatie"

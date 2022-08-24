@@ -60,7 +60,3 @@ en:
       vote_registered: "Your vote has been registered correctly."
   shared:
     expired: "Expired"
-  cookies:
-    message: "Your experience on this website was improving with using cookies"
-    accept: "Accept cookies"
-    more_info: "More information"

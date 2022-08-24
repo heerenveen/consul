@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   before_action :track_email_campaign
   before_action :set_return_url
-  before_action :accept_cookies
 
   check_authorization unless: :devise_controller?
   self.responder = ApplicationResponder
@@ -67,10 +66,6 @@ class ApplicationController < ActionController::Base
       else
         "application"
       end
-    end
-
-    def accept_cookies
-      session[:cookies_accepted] ||= params[:cookies_accepted]
     end
 
     def set_debate_votes(debates)
