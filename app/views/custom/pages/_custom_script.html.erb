@@ -1,0 +1,5 @@
+<% if @custom_page.slug == "cookies" && Rails.env.production? %>
+  <script id="CookieDeclaration"
+          src="https://consent.cookiebot.com/810a57e0-788a-46b7-9d61-30654888444c/cd.js"
+          type="text/javascript" async></script>
+<% end %>
