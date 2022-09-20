@@ -11,6 +11,13 @@
   }
 }
 
+.subnavigation ul li {
+
+  @include breakpoint(medium) {
+    margin-right: 0;
+  }
+}
+
 form label,
 .feed-content .debate a {
   color: $brand;
