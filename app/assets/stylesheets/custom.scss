@@ -21,6 +21,11 @@ form label,
   text-decoration: underline;
 }
 
+.budget-header {
+  min-height: 0;
+  padding-bottom: $line-height * 4;
+}
+
 .budget-phases .phase-title.current-phase-tab a,
 .budget-phases .tabs-title.current-phase-tab [aria-selected="true"] {
   background: $brand;
